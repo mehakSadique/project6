@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import CityList from './Component/CityList';
+import CityList from './CityList';
 
-class Input extends Component {
-    constructor(props) {
+class Input extends Component 
+{
+    constructor(props) 
+    {
         super(props);
 
-        this.state = {
+        this.state = 
+        {
             inputZipCode: "",
             alreadyAddedStates: [],
             ifLoading: false
@@ -128,4 +131,6 @@ class Input extends Component {
                 alert("Search error, try again or try again later");
                 this.setState({ ifLoading: false });
             })
+        }
     }
+
